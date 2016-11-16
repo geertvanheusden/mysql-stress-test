@@ -1,2 +1,2 @@
 sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=test --mysql-user=root --mysql-password=secret prepare
-sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=test --mysql-user=root --mysql-password=secret --max-time=500 --oltp-read-only=off --max-requests=0 --num-threads=151 run
+sysbench --test=oltp --oltp-table-size=1000000 --mysql-db=test --mysql-user=root --mysql-password=secret --max-time=500 --oltp-read-only=off --max-requests=0 --num-threads=400 run
