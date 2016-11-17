@@ -1,0 +1,22 @@
+version: '2'
+services:
+  database1: 
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/1/:/var/lib/mysql
+  database2: 
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/2/:/var/lib/mysql
+  database3:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/3/:/var/lib/mysql
+  database4:
+    build: .
+    image: mysql-stress
+    volumes:
+     - ./data/4/:/var/lib/mysql
